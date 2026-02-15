@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TemperatureConverterTest" time="0.133" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TemperatureConverterTest" time="0.138" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/kak3r/Documents/School/Week5Assignment/target/surefire/surefirebooter18424511881009438887.jar /home/kak3r/Documents/School/Week5Assignment/target/surefire 2026-02-15T18-47-01_462-jvmRun1 surefire17888635552522275851tmp surefire_03924336793381539763tmp"/>
+    <property name="sun.java.command" value="/home/kak3r/Documents/School/Week5Assignment/target/surefire/surefirebooter-20260215184917146_3.jar /home/kak3r/Documents/School/Week5Assignment/target/surefire 2026-02-15T18-49-17_014-jvmRun1 surefire-20260215184917146_1tmp surefire_0-20260215184917146_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/kak3r/Documents/School/Week5Assignment/target/test-classes:/home/kak3r/Documents/School/Week5Assignment/target/classes:/home/kak3r/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/kak3r/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/kak3r/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/kak3r/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/kak3r/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/kak3r/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/kak3r/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/kak3r/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/kak3r/Documents/School/Week5Assignment/target/surefire/surefirebooter18424511881009438887.jar"/>
+    <property name="surefire.real.class.path" value="/home/kak3r/Documents/School/Week5Assignment/target/surefire/surefirebooter-20260215184917146_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.17+10-Ubuntu-124.04"/>
     <property name="user.name" value="kak3r"/>
@@ -52,14 +52,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="isNotIsExtremeTemperaturePositive" classname="TemperatureConverterTest" time="0.068"/>
-  <testcase name="isNotIsExtremeTemperatureNegative" classname="TemperatureConverterTest" time="0.001"/>
-  <testcase name="canConvertToCelsiusPositive" classname="TemperatureConverterTest" time="0.001"/>
-  <testcase name="canConvertToCelsiusNegative" classname="TemperatureConverterTest" time="0.001"/>
-  <testcase name="canConvertToCelsiusFromKelvinPositive" classname="TemperatureConverterTest" time="0.001"/>
-  <testcase name="canConvertToCelsiusFromKelvinNegative" classname="TemperatureConverterTest" time="0.002"/>
-  <testcase name="canConvertToFahrenheitPositive" classname="TemperatureConverterTest" time="0.001"/>
+  <testcase name="isNotIsExtremeTemperaturePositive" classname="TemperatureConverterTest" time="0.054"/>
+  <testcase name="isNotIsExtremeTemperatureNegative" classname="TemperatureConverterTest" time="0.002"/>
+  <testcase name="canConvertToCelsiusPositive" classname="TemperatureConverterTest" time="0.003"/>
+  <testcase name="canConvertToCelsiusNegative" classname="TemperatureConverterTest" time="0.002"/>
+  <testcase name="canConvertToCelsiusFromKelvinPositive" classname="TemperatureConverterTest" time="0.002"/>
+  <testcase name="canConvertToCelsiusFromKelvinNegative" classname="TemperatureConverterTest" time="0.001"/>
+  <testcase name="canConvertToFahrenheitPositive" classname="TemperatureConverterTest" time="0.002"/>
   <testcase name="isIsExtremeTemperaturePositive" classname="TemperatureConverterTest" time="0.001"/>
-  <testcase name="canConvertToFahrenheitNegative" classname="TemperatureConverterTest" time="0.002"/>
+  <testcase name="canConvertToFahrenheitNegative" classname="TemperatureConverterTest" time="0.001"/>
   <testcase name="isIsExtremeTemperatureNegative" classname="TemperatureConverterTest" time="0.001"/>
 </testsuite>
