@@ -1,12 +1,12 @@
 
 public class TemperatureConverter {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         TemperatureConverter converter = new TemperatureConverter();
 
         double fahrenheit = 77;
         double celsius = converter.fahrenheitToCelsius(fahrenheit);
         System.out.println(fahrenheit + " F = " + celsius + " C");
-
+        
         double c = 25;
         double f = converter.celsiusToFahrenheit(c);
         System.out.println(c + " C = " + f + " F");
@@ -17,20 +17,20 @@ public class TemperatureConverter {
 
         System.out.println("Is " + celsius + " C extreme? " + converter.isExtremeTemperature(celsius));
     }
-    
-    public double fahrenheitToCelsius(double fahrenheit) {
+
+    public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 5 / 9;
     }
 
-    public double celsiusToFahrenheit(double celsius) {
+    public static double celsiusToFahrenheit(double celsius) {
         return (celsius * 9 / 5 + 32);
     }
 
-    public double kelvinToCelsius(double kelvin) {
+    public static double kelvinToCelsius(double kelvin) {
         return (kelvin - 273.15);
     }
 
-    public boolean isExtremeTemperature(double celsius) {
+    public static boolean isExtremeTemperature(double celsius) {
         if (celsius > -40 && celsius < 50) {
             return false;
         } else {
