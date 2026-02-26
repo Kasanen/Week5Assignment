@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     tools {
-        maven 'maven-3.8.7'
+        maven 'Maven 3'
     }
 
     stages{
@@ -21,6 +21,18 @@ pipeline{
         stage ('Report') {
             steps {
                 sh 'mvn jacoco:report'
+            }
+        }
+
+        stage ('Publish Test Results') {
+            steps {
+                junit 'target/surefire-reports/*.xml'
+            }
+        }
+
+        stage ('Publish Code Coverage') {
+            steps {
+                jacoco()
             }
         }
     }
