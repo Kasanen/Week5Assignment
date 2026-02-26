@@ -54,7 +54,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>java.TemperatureConverter</mainClass>
+              <mainClass>TemperatureConverter</mainClass>
             </manifest>
           </archive>
         </configuration>
