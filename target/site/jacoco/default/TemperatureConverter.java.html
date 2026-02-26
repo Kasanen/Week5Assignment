@@ -19,5 +19,23 @@
 <span class="fc" id="L19">            return true;</span>
         }
     }
+
+    public static void main(String[] args) {
+<span class="nc" id="L24">        TemperatureConverter converter = new TemperatureConverter();</span>
+
+<span class="nc" id="L26">        double fahrenheit = 77;</span>
+<span class="nc" id="L27">        double celsius = converter.fahrenheitToCelsius(fahrenheit);</span>
+<span class="nc" id="L28">        System.out.println(fahrenheit + &quot; F = &quot; + celsius + &quot; C&quot;);</span>
+
+<span class="nc" id="L30">        double c = 25;</span>
+<span class="nc" id="L31">        double f = converter.celsiusToFahrenheit(c);</span>
+<span class="nc" id="L32">        System.out.println(c + &quot; C = &quot; + f + &quot; F&quot;);</span>
+
+<span class="nc" id="L34">        double kelvin = 300;</span>
+<span class="nc" id="L35">        double kelvinAsCelsius = converter.kelvinToCelsius(kelvin);</span>
+<span class="nc" id="L36">        System.out.println(kelvin + &quot; K = &quot; + kelvinAsCelsius + &quot; C&quot;);</span>
+
+<span class="nc" id="L38">        System.out.println(&quot;Is &quot; + celsius + &quot; C extreme? &quot; + converter.isExtremeTemperature(celsius));</span>
+<span class="nc" id="L39">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

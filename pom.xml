@@ -34,7 +34,8 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>TemperatureConverter</mainClass>
+              <addClasspath>true</addClasspath>
+              <mainClass>org.example.TemperatureConverter</mainClass>
             </manifest>
           </archive>
         </configuration>
