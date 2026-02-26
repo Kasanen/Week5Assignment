@@ -5,7 +5,7 @@ pipeline{
         maven 'Maven 3.8.7'
     }
 
-    enviroment {
+    environment {
         PATH = "/usr/local/bin:${env.PATH}"
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
         DOCKERHUB_REPO = 'kak3r/lampotila'
