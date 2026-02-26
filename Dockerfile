@@ -1,25 +1,12 @@
-# FROM maven:latest
-# LABEL authors="kak3r"
+FROM maven:3.9.6-eclipse-temurin-21 AS build
 
-# WORKDIR /app
+LABEL authors="kak3r"
 
-# COPY pom.xml .
-
-# COPY . /app
-# RUN mvn package
-# CMD ["java", "-jar", "target/lampotila.jar"]
-
-FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
 
 COPY pom.xml .
-COPY src ./src
+COPY . /app
 
-RUN mvn clean package -DskipTests
-RUN jar xf target/lampotila.jar META-INF/MANIFEST.MF && cat META-INF/MANIFEST.MF
+RUN mvn package
 
-FROM eclipse-temurin:17-jre
-WORKDIR /app
-COPY --from=build /app/target/lampotila.jar app.jar
-
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "target/lampotila.jar"]
