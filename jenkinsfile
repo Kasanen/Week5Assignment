@@ -13,13 +13,6 @@ pipeline{
     }
 
     stages{
-       
-      stage('Checkout') {
-          steps {
-              git 'https://github.com/Kasanen/Week5Assignment.git'
-          }
-      }
-
       stage('Run Tests') {
           steps {
               bat 'mvn clean test'
