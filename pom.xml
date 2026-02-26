@@ -25,6 +25,7 @@
 
 
   <build>
+    <finalName>lampotila</finalName>
     <plugins>
 
       <!-- maven compiler plugin -->
