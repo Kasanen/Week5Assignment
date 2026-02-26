@@ -1,4 +1,5 @@
 FROM maven:latest
+LABEL authors="kak3r"
 
 WORKDIR /app
 

@@ -19,4 +19,22 @@ public class TemperatureConverter {
             return true;
         }
     }
+
+    public static void main(String[] args) {
+        TemperatureConverter converter = new TemperatureConverter();
+
+        double fahrenheit = 77;
+        double celsius = converter.fahrenheitToCelsius(fahrenheit);
+        System.out.println(fahrenheit + " F = " + celsius + " C");
+
+        double c = 25;
+        double f = converter.celsiusToFahrenheit(c);
+        System.out.println(c + " C = " + f + " F");
+
+        double kelvin = 300;
+        double kelvinAsCelsius = converter.kelvinToCelsius(kelvin);
+        System.out.println(kelvin + " K = " + kelvinAsCelsius + " C");
+
+        System.out.println("Is " + celsius + " C extreme? " + converter.isExtremeTemperature(celsius));
+    }
 }
